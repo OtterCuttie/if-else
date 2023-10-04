@@ -47,20 +47,21 @@
 
 # print (mass)
 n=int(input('от какого до какого'))
-def uuuuuu():
-    mass=[]
-    if(n>=0):
-        for i in range(n,0,-1):
+def uuuuuu(n):
+    mass = []
+    if( n > 0 ):
+        for i in range(n, 0, -1):
             mass.append(i)
-        for i in range(2,n+1,1):
+        for i in range(2, n+1, 1):
             mass.append(i)
         print(mass)
+    elif(n == 0):
+        print('0')
     else:
-        for i in range(n,0,1):
+        for i in range(n, 0, 1):
             mass.append(i)
-        for i in range(2,n+1,-1):
+        for i in range(-2, n-1, -1):
             mass.append(i)
         print(mass)
-    
 
-uuuuuu()
+uuuuuu(n)
